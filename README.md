@@ -84,12 +84,12 @@ The finished jar ends up in `build/libs/hellocommand-1.0.0.jar`.
 
 ```mermaid
 flowchart LR
-    A[Game starts] --> B["HelloCommandMod#onInitialize()"]
+    A[Game starts] --> B["HelloCommandMod.onInitialize()"]
     B --> C[Register a listener on<br/>CommandRegistrationCallback]
     C --> D[Server builds its<br/>command tree]
     D --> E["HelloCommand.register()<br/>adds the /hello literal"]
     E --> F[Player types /hello]
-    F --> G["sendSuccess(&quot;Hello World!&quot;)"]
+    F --> G["sendSuccess('Hello World!')"]
 ```
 
 1. **`HelloCommandMod`** is the mod's entrypoint (declared in `fabric.mod.json`). When Fabric loads it, it adds a listener to Fabric API's `CommandRegistrationCallback`.
