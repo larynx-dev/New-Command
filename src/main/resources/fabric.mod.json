@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "hellocommand",
+	"version": "${version}",
+	"name": "Hello Command",
+	"description": "Adds a simple /hello command that greets you with \"Hello World!\" in chat.",
+	"authors": [
+		"larynx-dev"
+	],
+	"contact": {
+		"sources": "https://github.com/larynx-dev/hello-command"
+	},
+	"license": "MIT",
+	"icon": "assets/hellocommand/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.larynx.hellocommand.HelloCommandMod"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
